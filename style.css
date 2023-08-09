@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poiret One';
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+  .main{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg3_lightgreentrees.jpg);
+    background-size: cover;
+  }
+.nav{
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    padding: 1%;
+    border-bottom: 0.5vw solid aqua ;
+}
+.logo a{
+  text-decoration: none;
+  color: #dbdbdb;
+  font-size: 3.0vw;
+  margin-right: 50vw;
+}
+
+.logo a:hover{
+  cursor: pointer;
+  color: aqua;
+}
+.menu a{
+    text-decoration: none;
+    color: #dbdbdb;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 1vw;
+}
+.sec1{
+  /* background-color: tomato; */
+  height:50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.text h1,p{
+  color: #dbdbdb;
+  margin-right: 8vw;
+}
+.text{
+  border-right: solid 2px #dbdbdb;
+}
+.text>p{
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  border-bottom: solid;
+  padding-bottom: 30px;
+}
+.text>p span a{
+  color: aqua;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.text>h1{
+  padding-top: 35px;
+  letter-spacing: 5px;
+  text-transform:uppercase;
+  transition: all ease 1.5s;
+}
+.text>h1:hover{
+  -webkit-text-fill-color: aqua;
+  cursor: pointer;
+}
+.img-div{
+height: 25vh;
+width: 5vw;  
+border: solid aqua;
+border-radius: 10px;
+padding-right: 45vw;
+overflow: hidden;
+}
+.img-div img{
+  object-fit:cover;
+  filter: brightness(0.5);
+  height: 100%;
+  width: 45vw;
+  transition: all ease 0.5s;
+}
+.img-div img:hover{
+  scale: 1.2;
+  filter: brightness(1);
+}
+.sec2{
+  /* background-color: antiquewhite; */
+  height:50%;
+}
+.sec2>button{
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-left: 50px;
+}
+.sec2>button i{
+  margin-right: 8px;
+}
+.sec2>button a{
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 650px) {
+  .img-div img{
+    width: 30vw;
+    height: 20vh;
+    display: none;
+  }
+  .img-div{
+    width: 30vw;
+    height: 20vh;
+    display: none;
+  }
+  .text h1,p{
+    padding: 10% 5%;
+    font-size:medium;
+  }
+  .text h1{
+    padding: 0 25%;
+    transition: all ease 1.2s;
+  }
+  .text{
+    border-right: none;
+  }
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
